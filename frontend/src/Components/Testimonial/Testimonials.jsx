@@ -41,37 +41,34 @@ const Testimonials = () => {
   return (
     <Slider {...settings}>
         <div className="testimonial py-4 px-3">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quo, aliquid officiis obcaecati maiores vel nisi atque debitis
-                 recusandae perspiciatis optio assumenda eligendi molestiae repudiandae. Ea deleniti at repellendus numquam.
+            <p>The experience was beyond my expectations! The destination was breathtaking, and the booking process was so smooth. I can't wait to plan my next trip!
             </p>
             <div className='d-flex align-items-center gap-4 mt-3'>
                 <img src={ava01} className='w-25 h-25 rounded-2' alt="" />
                 <div>
-                    <h6 className='mb-0 mt-3'>John Doe</h6>
+                    <h6 className='mb-0 mt-3'>Mohan</h6>
                     <p>Customer</p>
                 </div>
             </div>
         </div>
         <div className="testimonial py-4 px-3">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quo, aliquid officiis obcaecati maiores vel nisi atque debitis
-                 recusandae perspiciatis optio assumenda eligendi molestiae repudiandae. Ea deleniti at repellendus numquam.
+            <p>The place was even more beautiful than I expected! Every detail of the travel plan was well-organized, making my journey smooth and unforgettable.
             </p>
             <div className='d-flex align-items-center gap-4 mt-3'>
                 <img src={ava02} className='w-25 h-25 rounded-2' alt="" />
                 <div>
-                    <h6 className='mb-0 mt-3'>John Doe</h6>
+                    <h6 className='mb-0 mt-3'>Suma</h6>
                     <p>Customer</p>
                 </div>
             </div>
         </div>
         <div className="testimonial py-4 px-3">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quo, aliquid officiis obcaecati maiores vel nisi atque debitis
-             recusandae perspiciatis optio assumenda eligendi molestiae repudiandae. Ea deleniti at repellendus numquam.
+        <p>I was amazed by how incredible the location was! The whole trip felt effortless, and I had the most relaxing vacation ever.
         </p>
         <div className='d-flex align-items-center gap-4 mt-3 '>
             <img src={ava03} className='w-25 h-25 rounded-2' alt="" />
             <div>
-                <h6 className='mb-0 mt-3'>John Doe</h6>
+                <h6 className='mb-0 mt-3'>Rohith</h6>
                 <p>Customer</p>
             </div>
         </div>

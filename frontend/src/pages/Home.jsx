@@ -30,9 +30,7 @@ const Home = () => {
             Explore the world with us and gather<span className='highlight'>  Memories </span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Nam eveniet tempora nostrum excepturi ipsam perspiciatis vero, facere aut dignissimos 
-            repudiandae iure voluptatem labore ducimus ipsa ab est vel officia minima.
+          Welcome to Travel Booking site, where your travel dreams come to life! We offer seamless bookings and tailored experiences to help you explore new destinations, create unforgettable memories, and enjoy stress-free journeys. Your adventure starts here!
           </p>
         </div>
         </Col>
@@ -90,7 +88,7 @@ const Home = () => {
           <div className="experience__content">
             <Subtitle subtitle={'Experience'}/>
             <h2>With our all experience we will serve you <br /> the best</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+            <p>Join family of happy travellers</p>
           </div>
           <div className="counter__wrapper d-flex align-items-center gap-5">
             <div className="counter__box">

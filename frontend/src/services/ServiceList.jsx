@@ -11,17 +11,17 @@ const servicesData=[
     {
         imgUrl:weatherImg,
         title:"Calculate Weather",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        desc:"Accurate weather forecast."
     },
     {
         imgUrl:guideImg,
         title:"Best Guide",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        desc:"Throughout the tour."
     },
     {
         imgUrl:customizationImg,
         title:"Customization",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+        desc:"According to your need and interest."
     }
 ]
 

@@ -79,6 +79,8 @@ const Booking = ({ tour, avgRating }) => {
               type="phone"
               placeholder="Phone"
               id="phone"
+              pattern="\d{10}" 
+              maxLength={10}
               required
               onChange={handleChange}
             />
@@ -94,6 +96,8 @@ const Booking = ({ tour, avgRating }) => {
             <input
               type="number"
               placeholder="Guests"
+              min="1" 
+              step="1" 
               id="guestSize"
               required
               onChange={handleChange}

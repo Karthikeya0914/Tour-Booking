@@ -11,8 +11,19 @@ export const register = async (req, res) => {
       return res.status(400).json({ success: true, message: "Missing required fields" });
     }
 
-    const existingUser = await User.findOne({ email: req.body.email });
-    if (existingUser) {
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(req.body.email)) {
+      return res.status(400).json({ success: false, message: "Invalid email format" });
+    }
+
+    // Password length validation
+    if (req.body.password.length < 8) {
+      return res.status(400).json({ success: false, message: "Password must be at least 8 characters long" });
+    }
+
+    const existingUser  = await User.findOne({ email: req.body.email });
+    if (existingUser ) {
       return res.status(400).json({ success: false, message: "Email already in use" });
     }
 
@@ -20,15 +31,15 @@ export const register = async (req, res) => {
     const hash = await bcrypt.hash(req.body.password, salt);
     req.body.password = hash;
 
-    const newUser = new User({
+    const newUser  = new User({
       username: req.body.username,
       email: req.body.email,
       password: req.body.password,
     });
 
-    await newUser.save();
+    await newUser .save();
 
-    res.status(201).json({ success: true, message: "User created successfully" });
+    res.status(201).json({ success: true, message: "User  created successfully" });
   } catch (err) {
     console.error(err);
     res.status(500).json({ success: false, message: "Internal Server Error" });
@@ -44,9 +55,15 @@ export const login = async (req, res) => {
       return res.status(400).json({ success: false, message: "Missing required fields" });
     }
 
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({ success: false, message: "Invalid email format" });
+    }
+
     const user = await User.findOne({ email });
     if (!user) {
-      return res.status(404).json({ success: false, message: "User not found" });
+      return res.status(404).json({ success: false, message: "User  not found" });
     }
 
     const isValidPassword = await bcrypt.compare(password, user.password);
